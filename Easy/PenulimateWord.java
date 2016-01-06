@@ -12,7 +12,9 @@ public class PenulimateWord {
 		while (in.hasNextLine()) {
 			String line = in.nextLine();
 			String[] words = line.split("[ \t]+");
-			System.out.println(words[words.length - 2]);
+			if(words.length >=2){
+				System.out.println(words[words.length - 2]);
+			}
 		}
 	}
 }
